@@ -1,6 +1,6 @@
 # lhanna61
 
-My name is **bold** Lauren Hanna. **bold** Not Hanna.
+My name is **Lauren Hanna**. **Not** Hanna.
 
 _Things I like_
 
@@ -26,7 +26,7 @@ Quote from me _just now_:
 
 
 
-**bold** Goals:
+**GOALS** :
 
 [ ] finish school
 

@@ -1,0 +1,7 @@
+a = ['dog', 'cat', 'rabbit', 'hamster', 'gerbil']
+b = ['dog', 'hamster', ‘snake']
+for i in a:
+    for z in b:
+        if i == z:
+            c.append(i)
+print c

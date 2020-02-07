@@ -1,7 +1,7 @@
-a = ['dog', 'cat', 'rabbit', 'hamster', 'gerbil']
-b = ['dog', 'hamster', ‘snake']
-for i in a:
-    for z in b:
-        if i == z:
-            c.append(i)
-print c
+for z in a:
+    if z not in b:
+        print z
+
+for z in b:
+    if z not in a:
+        print z

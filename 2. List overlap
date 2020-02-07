@@ -1,3 +1,13 @@
+a = ['dog', 'cat', 'rabbit', 'hamster', 'gerbil']
+b = ['dog', 'hamster', 'snake']
+c = []
+
+for i in a:
+    for z in b:
+        if i == z:
+            c.append(i)
+print c
+
 for z in a:
     if z not in b:
         print z

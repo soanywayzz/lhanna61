@@ -1,1 +1,5 @@
-
+file = open ("test1.bat","w")
+file.write("@ECHO Off\n")
+file.write ("EHCO Press 1 to make say Hi")
+file.write (ECHO Press 2 to make say Bye")
+file.write("set /p car=\n")

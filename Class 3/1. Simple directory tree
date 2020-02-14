@@ -1,0 +1,12 @@
+import os
+root_path = "C:\Empty_Dir"
+os.mkdir(root_path)
+first_level = ["folder1", "folder2", "folder3", "folder4"]
+for folder in first_level:
+    os.mkdir(os.path.join(root_path, folder))
+second_level = ["archive", "complete"]
+for folder in second_level:
+   os.mkdir(os.path.join(root_path, "folder3", folder))
+import shutil
+shutil.rmtree(root_path)
+

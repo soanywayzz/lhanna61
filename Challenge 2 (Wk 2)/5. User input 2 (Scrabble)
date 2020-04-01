@@ -1,3 +1,5 @@
+# Use the provided letter count
+# Ask for a word and tally the points
 score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
 "f": 4, "i": 1, "h": 4, "k": 5, "j": 8, "m": 3,
 "l": 1, "o": 1, "n": 1, "q": 10, "p": 3, "s": 1,
@@ -18,4 +20,12 @@ def scrabble_score(word):
 userWord = raw_input("Enter a word to be scored: ")
 scrabble_score(userWord)
 total_score = sum(tally)
-print (total_score)
+print "Your Score Is", (total_score)
+
+# OUTPUT = Enter a word to be scored:
+# "fish" (typed in)
+# Your Score Is 10
+
+
+### ***In a dream world, I would like to pull in some kind of dictionary to check and
+### see if words are ACTUALLY real***

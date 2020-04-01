@@ -1,12 +1,18 @@
+# Using the provided list
+# Determine which items are present in both lists AND
+# Determine which items do not overlap in the list
 a = ['dog', 'cat', 'rabbit', 'hamster', 'gerbil']
 b = ['dog', 'hamster', 'snake']
 c = []
 
-for i in a:
-    for z in b:
-        if i == z:
-            c.append(i)
-print c
+# for i in a:
+#     for z in b:
+#         if i == z:
+#             c.append(i)
+# print c
+
+## OUTPUT = ['dog', 'hamster']
+
 
 for z in a:
     if z not in b:
@@ -15,3 +21,9 @@ for z in a:
 for z in b:
     if z not in a:
         print z
+        
+# OUTPUT =
+# cat
+# rabbit
+# gerbil
+# snake

@@ -1,2 +1,5 @@
+# Create a list of numbers (provided)
+# Make a new list that has all the elements less than 5 from this list and print new list
+## Write in one line of code
 a = [1, 2, 3, 6, 8, 12, 20, 32, 46, 85]
 print([num for num in a if num < 5])

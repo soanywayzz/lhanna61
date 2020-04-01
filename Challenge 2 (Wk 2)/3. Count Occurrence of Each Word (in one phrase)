@@ -1,3 +1,6 @@
+# Using the provided string of words
+# Count the occurence of each word and print the word plus the count
+
 def word_count(str):
     counts = dict()
     words = str.split()
@@ -8,3 +11,5 @@ def word_count(str):
             counts[word] = 1
     return counts
 print( word_count('hi dee hi how are you mr dee'))
+
+## OUTPUT = {'how': 1, 'hi': 2, 'are': 1, 'mr': 1, 'you': 1, 'dee': 2}

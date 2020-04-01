@@ -1,3 +1,4 @@
+# Ask the user to input their age and tell them when they can retire (age 65)
 age = int(input('what is your age? '))
 if age < 65:
     ret_age = 65 - age
@@ -5,3 +6,7 @@ if age < 65:
 
 else:
     print('you are retired')
+
+# OUTPUT = what is your age?
+# "28" (typed in)
+# you can retire in 37 years

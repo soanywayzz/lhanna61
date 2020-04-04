@@ -1,12 +1,58 @@
 import os
-root_path = "C:\Empty_Dir"
-os.mkdir(root_path)
-first_level = ["folder1", "folder2", "folder3", "folder4"]
-for folder in first_level:
-    os.mkdir(os.path.join(root_path, folder))
-second_level = ["archive", "complete"]
-for folder in second_level:
-   os.mkdir(os.path.join(root_path, "folder3", folder))
-import shutil
-shutil.rmtree(root_path)
 
+# Identify the starting file location
+directory = r"C:\Users\lauren_hanna\Desktop\Python\Week3"
+
+# Create a main folder that can be deleted at the end step
+outputDirectory = os.path.join(directory, "path")
+if not os.path.exists(outputDirectory):
+    os.mkdir(outputDirectory)
+# identify that folder for easier coding
+path = r"C:\Users\lauren_hanna\Desktop\Python\Week3\path"
+
+# start creating the directory tree folders-- starting with the top tier folder of "path"
+outputDirectory = os.path.join(directory, "path/draft_code")
+if not os.path.exists(outputDirectory):
+    os.mkdir(outputDirectory)
+
+outputDirectory = os.path.join(directory, "path/draft_code/pending")
+if not os.path.exists(outputDirectory):
+    os.mkdir(outputDirectory)
+
+outputDirectory = os.path.join(directory, "path/draft_code/complete")
+if not os.path.exists(outputDirectory):
+    os.mkdir(outputDirectory)
+
+outputDirectory = os.path.join(directory, "path/includes")
+if not os.path.exists(outputDirectory):
+    os.mkdir(outputDirectory)
+
+outputDirectory = os.path.join(directory, "path/layouts")
+if not os.path.exists(outputDirectory):
+    os.mkdir(outputDirectory)
+
+outputDirectory = os.path.join(directory, "path/layouts/defaults")
+if not os.path.exists(outputDirectory):
+    os.mkdir(outputDirectory)
+
+outputDirectory = os.path.join(directory, "path/layouts/post")
+if not os.path.exists(outputDirectory):
+    os.mkdir(outputDirectory)
+
+outputDirectory = os.path.join(directory, "path/layouts/post/posted")
+if not os.path.exists(outputDirectory):
+    os.mkdir(outputDirectory)
+
+outputDirectory = os.path.join(directory, "path/site")
+if not os.path.exists(outputDirectory):
+    os.mkdir(outputDirectory)
+
+print "folders have been made"
+
+
+# import the necessary tool to delete folders/files
+# delete the top tier folder "path"
+import shutil
+shutil.rmtree(path)
+
+print "and folders have been deleted"

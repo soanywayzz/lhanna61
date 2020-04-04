@@ -1,3 +1,17 @@
+# Simple Directory Tree
+# draft_code
+# #     pending
+# #     complete
+# # includes
+# # layouts
+# #     default
+# #     post
+# #         posted
+# # site
+
+# Using the os.system or os.mkdirs replicate this simple directory tree
+# then Delete the directory tree without deleting your entire hard drive
+
 import os
 
 # Identify the starting file location

@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+<idinfo>
+<citation>
+<citeinfo>
+<origin>USDA-NRCS, Rhode Island State Office/Service Center</origin>
+<pubdate>20071231</pubdate>
+<title>Rhode Island Watershed Boundary Dataset; HUC12_RI_09</title>
+<edition>1</edition>
+<geoform>vector digital data</geoform>
+<pubinfo Sync="TRUE">
+<pubplace>Warwick, Rhode Island</pubplace>
+<publish>United States Department of Agriculture - Natural Resource Conservation Service</publish>
+</pubinfo>
+<othercit>Suggested bibliographic reference: RIGIS, 2007. Rhode Island Watershed Boundary Dataset; HUC12_RI_09. Rhode Island Geographic Information System (RIGIS) Data Distribution System, URL: http://www.rigis.org, Environmental Data Center, University of Rhode Island, Kingston, Rhode Island (last date accessed: 2 October 2014).</othercit>
+<onlink>http://www.rigis.org</onlink>
+<onlink>http://datagateway.nrcs.usda.gov</onlink>
+<lworkcit>
+<citeinfo>
+<origin>Rhode Island Geographic Information System (RIGIS)</origin>
+<pubdate>1993</pubdate>
+<title>Rhode Island Geographic Information System (RIGIS) Data Distribution System</title>
+<onlink>http://www.rigis.org</onlink>
+</citeinfo>
+</lworkcit>
+</citeinfo>
+</citation>
+<descript>
+<abstract>This data set is a complete digital hydrologic unit boundary layer to the Subwatershed (12-digit) 6th level for the State of Rhode Island. This data set consists of geo-referenced digital data and associated attributes created in accordance with the "FGDC Proposal, Version 2.0 - Federal Standards For Delineation of Hydrologic Unit Boundaries 10/01/04"(http://www.ftw.nrcs.usda.gov/huc_data.html). Polygons are attributed with hydrologic unit codes for 4th level sub-basins, 5th level watersheds, 6th level subwatersheds, name, size, downstream hydrologic unit, type of watershed, non-contributing areas, flow modification, and local area watershed names.</abstract>
+<purpose>The Watershed and Subwatershed hydrologic unit boundaries provide a uniquely identified and uniform method of subdividing large drainage areas. The smaller sized 6th level sub-watersheds (up to 40,000 acres) are useful for numerous application programs supported by a variety of local, State, and Federal Agencies. This data set is intended to be used as a tool for water-resource management and planning activities, particularly for site-specific and localized studies requiring a level of detail provided by large-scale map information. The dataset will be appended to a larger seamless nationally consistant geospatial database as other states complete their portion of the watershed boundary dataset.</purpose>
+<supplinf>Please note that this dataset consists of data that were originally downloaded from the USDA Geospatial Data Gateway (http://datagateway.nrcs.usda.gov) then modified before posted for redistribution by RIGIS.  In addition, this metadata record was originally published by NRCS and has also been modified for redistibution by RIGIS.  Please see the Lineage section of these metadata for details.  Please also visit the USDA Geospatial Data Gateway for review additional data that may be of use, including regional watershed boundary data.</supplinf>
+</descript>
+<timeperd>
+<timeinfo>
+<sngdate>
+<caldate Sync="TRUE">20071231</caldate>
+</sngdate>
+</timeinfo>
+<current>publication date</current>
+</timeperd>
+<status>
+<progress>Complete</progress>
+<update>As needed</update>
+</status>
+<spdom>
+<bounding>
+<westbc>-71.934206</westbc>
+<eastbc>-71.024489</eastbc>
+<northbc>42.223519</northbc>
+<southbc>41.146161</southbc>
+</bounding>
+</spdom>
+<keywords>
+<theme>
+<themekt>ISO 19115 Topic Category</themekt>
+<themekey>InlandWaters</themekey>
+</theme>
+<theme>
+<themekt>None</themekt>
+<themekey>Hydrologic Units</themekey>
+<themekey>Hydrologic Unit Code</themekey>
+<themekey>Region</themekey>
+<themekey>HUC</themekey>
+<themekey>Sub-Region</themekey>
+<themekey>Basin</themekey>
+<themekey>Sub-Basin</themekey>
+<themekey>Watershed</themekey>
+<themekey>Watershed Boundaries</themekey>
+<themekey>boundaries</themekey>
+<themekey>Subwatershed</themekey>
+<themekey>WBD</themekey>
+<themekey>Watershed Boundary Dataset</themekey>
+</theme>
+<place Sync="TRUE">
+<placekt>Counties and County Equivalents of the States of the United States and the District of Columbia (FIPS Pub 6-3)</placekt>
+<placekey Sync="TRUE">New England</placekey>
+<placekey>Rhode Island</placekey>
+</place>
+</keywords>
+<accconst Sync="TRUE">None.</accconst>
+<useconst>
+USDA Use Constraints:
+The distributor shall not be held liable for improper or incorrect use of this data, based on the description of appropriate/inappropriate uses described in this metadata document. It is strongly recommended that this data is directly acquired from the distributor and not indirectly through other sources which may have changed the data in some way. These data should not be used at scales greater than 1:24,000 for the purpose of identifying hydrographic watershed boundary feature locations in 7. 5 should be acknowledged as the data source in products derived from these data. The 7 Watershed Boundary Dataset is public information and may be interpreted by all organizations, agencies, units of government, or others based on needs; however, they are responsible for the appropriate application of the data. Federal, State, or local regulatory bodies are not to reassign to the Natural Resources Conservation Service any authority for the decisions they make.  The Natural Resources Conservation Service will not perform any evaluations of these maps or purposes related solely to State or local regulatory programs. Photographic or digital enlargement of these maps to scales greater than that at which they were originally delineated can result in misrepresentation of the data.  If enlarged, the maps will not include the fine detail that would be appropriate for mapping at the small scale.  Digital data files are periodically updated. Files are dated, and users are responsible for obtaining the latest version of the data from the source distributor.
+This dataset is provided for reference only.  These data were created for informational, planning and guidance use only. They are a general reference, not a legally authoritative source for the location of natural or manmade features. Proper interpretation of these data may requre the assistance of appropriate professional services. The cartographic representations depicted have not been verified by a RI Registered Professional Land Surveyor and are not intended to be used in place of a survey. The producer makes no warranty, express or implied, related to the accuracy, reliability, completeness, or currentness of these data.
+This dataset is provided 'as is.’  The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.
+Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.  Versions of the RIGIS logo suitable for both printed and web-based products are available at http://www.rigis.org/logos.
+</useconst>
+<ptcontac>
+<cntinfo>
+<cntorgp>
+<cntorg>University of Rhode Island Environmental Data Center</cntorg>
+<cntper>Greg Bonynge</cntper>
+</cntorgp>
+<cntpos>Geospatial Extension Specialist</cntpos>
+<cntaddr>
+<addrtype>mailing and physical address</addrtype>
+<address>Coastal Institute</address>
+<address>1 Greenhouse Road</address>
+<city>Kingston</city>
+<state>RI</state>
+<postal>02881</postal>
+</cntaddr>
+<cntvoice>401-874-2180</cntvoice>
+<cntemail>greg@edc.uri.edu</cntemail>
+</cntinfo>
+</ptcontac>
+<datacred>Funding for the Rhode Island Watershed Boundary Dataset (WBD) was provided by the USDA-NRCS,USEPA. Representatives from the Rhode Island Department of Environmental Management contributed a substantial amount of time and salary towards quality review of the dataset.</datacred>
+<native>Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.2.2.1350</native>
+</idinfo>
+<dataqual>
+<attracc>
+<attraccr>Polygon identifiers are manually checked with the original base map using the attribute file. Verification on polygon identification continuity on each side of a neatline is done visually on the screen as adjacent quad representations are assembled into larger area data layers.</attraccr>
+</attracc>
+<logic>
+features stored in an ESRI File Geodatabase format represent watershed boundaries digitized in compliance with the "Federal Standards for Delineation of Hydrologic Unit Boundaries; Verion 2, October1, 2004"
+The following topological reviews have been succesfully completed:
+Create a new topology inside this geodatabase feature dataset.  Associate the arc, polygon and centroid feature classes with this topology.
+Rank the arc feature class with a 1.
+Rank the polygon feature class with a 2.
+Rank the centroid feature class with a 1.
+Apply topology rules to arcs and polygons:
+To the arcs, apply these rules:
+Must Not Overlap
+Must Not Intersect
+Must Not Have Dangles
+Must Not Have Pseudos
+Must Not Self-Overlap
+Must Not Self-Intersect
+Must be covered by boundary of (polygon file)
+To the polygons, apply these rules:
+Must Not Overlap
+Must Not Have Gaps
+Boundary must be covered by (arc file)
+</logic>
+<complete>All fields for all polygons in the polygon attribute table are attributed. Some polygons in the Ncontrb_a field might have a 0 value. All fields for the lines in the arc attribute table are attributed. The lines adjacent to the universal polygon are attributed with a 0 for the hu_level. These cannot be attributed until the adjacent states complete their linework at which point the highest level of hydrologic unit can be determined.</complete>
+<posacc>
+<horizpa>
+<horizpar>
+The accuracy of these maps is generally based on the contour information of corresponding DRGs. The differences in positional accuracy between the hydrologic unit boundaries and their digitized map locations has not been tested
+Hydrologic unit boundaries generally were digitized within 0.01 inches of their locations on the digitizing source.  Edge match locations are exact because the data were extracted from a New England-based hydrologic units layer which had been electronically edge-matched.
+</horizpar>
+</horizpa>
+<vertacc>
+<vertaccr>Not Tested</vertaccr>
+</vertacc>
+</posacc>
+<lineage>
+<srcinfo>
+<srccite>
+<citeinfo>
+<origin>USDA-Natural Resources Conservation Service</origin>
+<pubdate>20030101</pubdate>
+<pubtime>Unknown</pubtime>
+<title>Sub-Watersheds of Rhode Island</title>
+<geoform>vector digital data</geoform>
+<pubinfo>
+<pubplace>Warwick, Rhode Island</pubplace>
+<publish>USDA-Natural Resources Conservation Service</publish>
+</pubinfo>
+<onlink>NA</onlink>
+</citeinfo>
+</srccite>
+<srcscale>24000</srcscale>
+<typesrc>USGS Digital Raster Graphics and paper topographic quadrangles</typesrc>
+<srctime>
+<timeinfo>
+<rngdates>
+<begdate>1970</begdate>
+<begtime>unknown</begtime>
+<enddate>1987</enddate>
+<endtime>unknown</endtime>
+</rngdates>
+</timeinfo>
+<srccurr>publication date</srccurr>
+</srctime>
+<srccitea>NRCS</srccitea>
+<srccontr>map delineation</srccontr>
+</srcinfo>
+<procstep>
+<procdesc>The waters of Narragansett Bay were divided in the "Geographic Segments of Narragansett Bay" coverage created by the Narragansett Bay Project in 1994.  The watersheds for these bay segments were delineated and digitized from paper copy topographic maps using Arc Info software by NRCS staff.  (Narragansett Bay Project did not create metadata for the bay segment coverage.)</procdesc>
+<srcused>NRCS</srcused>
+<procdate Sync="TRUE">1997</procdate>
+</procstep>
+<procstep>
+<procdesc>
+Rhode Island Geographic Information System (RIGIS) coverages for Basins and Subbasins (S44hdb90 and S44hsb90) were modified to fit standards for HUC -- aggregation to create appropriate HUC levels.
+Documentation for the RIGIS coverages is poor, however the data was the result of a cooperative effort between NRCS (Warwick), USGS-Water Resource Division (Providence),  RI Water Resource Board,  RI Division of Statewide Planning and the RI Dept of Environmental Management
+Watershed boundaries were hand drafted onto mylar  quad maps and manually digitized
+</procdesc>
+<srcused>NRCS</srcused>
+<procdate>1997</procdate>
+</procstep>
+<procstep>
+<procdesc>Data layer attribution, editing, review by RI/IRT NRCS and RIGIS personnel; USGS</procdesc>
+<srcused>NRCS</srcused>
+<procdate>1998</procdate>
+</procstep>
+<procstep>
+<procdesc>Basin coverages from MA and CT were edge-matched to the RI HUC8.   Since the Blackstone (?PJ - 2007) and Quinebaug Subbasins do not drain into RI, few subdivisions were made past the HUC8 level.  HUC 10 and HUC 12 delineations were made by NRCS staff to match CT and MA HUC 10 and 12 delineations.  On-screen digitizing  was done over DRG basemap</procdesc>
+<srcused>NRCS</srcused>
+<procdate>1998</procdate>
+</procstep>
+<procstep>
+<procdesc>Additional subdivisions were made in the Pawcatuck Subbasin from paper copy topographic maps using Arc Info software by NRCS staff to fit local needs and meet the HUC standards.</procdesc>
+<srcused>NRCS</srcused>
+<procdate>1999</procdate>
+</procstep>
+<procstep>
+<procdesc>Review and editing/combining of smaller subwatersheds to better meet National Standard</procdesc>
+<srcused>NRCS</srcused>
+<procdate>2000</procdate>
+</procstep>
+<procstep>
+<procdesc>Attribute edits to update layer to newest Hydrologic Unit Digitizing Standard</procdesc>
+<srcused>NRCS</srcused>
+<procdate>2001</procdate>
+</procstep>
+<procstep>
+<procdesc>Draft HUC maps were presented to the major data users in the state for review.  Agreement was reached among the agencies (local, state and federal) that the proposed 8, 10 and 12 level units met the standard for HUC  with the exception of the coastal areas since the standard for the delineation  of coastal areas has not been approved.  The coastal delineations will need to be re-visited once the standard is established</procdesc>
+<srcused>NRCS</srcused>
+<procdate>2002</procdate>
+</procstep>
+<procstep>
+<procdesc>
+HUC12 watershed boundaries for all watersheds intersecting RI were edited/updated by EPA Region 5 in order to meet that agencies regulatory data needs.  All work was performed in accordance with reguirements &amp; standards set forth in the "Federal Standards for Delineation of Hydrologic Unit Boundaries; Version 2.0, October 1, 2004.
+All edits were reviewed and verified by the RI Dept of Environmental Management and the Warwick, RI office of NRCS.  With one exception, the resulting watershed boundaries do not conflict with the certified WBD of neighboring states.  The exception occurs in the 6th level watersheds identified as follows: 010900030207, 010900040401 and 010900030208.  The areas draining to "Cranberry Ponds" and thence to "Happy Hollow Pond" required alteration and will need to be resolved with the certified WBD for Massachusetts.
+</procdesc>
+<procdate>20071201</procdate>
+<proccont>
+<cntinfo>
+<cntperp>
+<cntper>Joan Rogers</cntper>
+<cntorg>US EPA Region 5</cntorg>
+</cntperp>
+<cntpos>Research Associate</cntpos>
+<cntaddr>
+<addrtype>mailing and physical address</addrtype>
+<address>EPA Region 5</address>
+<address>77 W. Jackson Blve</address>
+<city>Chicago</city>
+<state>Illinois</state>
+<postal>60604</postal>
+<country>USA</country>
+</cntaddr>
+<cntvoice>312-886-2785</cntvoice>
+<cnttdd>na</cnttdd>
+<cntfax>na</cntfax>
+<cntemail>rogers.joan@epa.gov</cntemail>
+<cntinst>please e-mail questions or comments</cntinst>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>HUC12 watershed boundary data were downloaded from the USDA Geospatial Data Gateway (http://datagateway.nrcs.usda.gov).  After verifying the projection of the data, the data were appended together and then the HUC12 watersheds that intersect the Rhode Island state boundary were identified and extracted.  Local watershed names provided by Paul Jordan at the Rhode Island Department of Environmental Management were joined to these data using the HUC12 code as the join field.  State-specific metadata available from NRCS (ftp://ftp.ftw.nrcs.usda.gov/pub/wbd/hu/metadata/ri_hu12.met) were edited to include RIGIS distribution information and attribute information about the RIDEM-supplied local watershed names.</procdesc>
+<procdate>20090129</procdate>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>University of Rhode Island Environmental Data Center</cntorg>
+<cntper>Greg Bonynge</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>1 Greenhouse Road</address>
+<city>Kingston</city>
+<state>RI</state>
+<postal>02881</postal>
+</cntaddr>
+<cntvoice>401-874-2180</cntvoice>
+<cntemail>greg@edc.uri.edu</cntemail>
+<cntinst>email preferred</cntinst>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Updated Point of Contact information for this dataset from "USDA general contact" to "Greg Bonynge."</procdesc>
+<procdate>20150601</procdate>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>University of Rhode Island Environmental Data Center</cntorg>
+<cntper>Erica Tefft</cntper>
+</cntorgp>
+<cntpos>Research Associate</cntpos>
+<cntaddr>
+<addrtype>mailing and physical address</addrtype>
+<address>Coastal Institute</address>
+<address>1 Greenhouse Road</address>
+<city>Kingston</city>
+<state>RI</state>
+<postal>02881</postal>
+</cntaddr>
+<cntvoice>401-874-5054</cntvoice>
+<cntemail>erica@edc.uri.edu</cntemail>
+</cntinfo>
+</proccont>
+</procstep>
+</lineage>
+</dataqual>
+<spdoinfo>
+<direct>Vector</direct>
+<ptvctinf>
+<sdtsterm>
+<sdtstype>G-polygon</sdtstype>
+<ptvctcnt>59</ptvctcnt>
+</sdtsterm>
+</ptvctinf>
+</spdoinfo>
+<spref>
+<horizsys>
+<planar>
+<gridsys>
+<gridsysn>State Plane Coordinate System 1983</gridsysn>
+<spcs>
+<spcszone>3800</spcszone>
+<transmer>
+<sfctrmer>0.999994</sfctrmer>
+<longcm>-71.500000</longcm>
+<latprjo>41.083333</latprjo>
+<feast>328083.333333</feast>
+<fnorth>0.000000</fnorth>
+</transmer>
+</spcs>
+</gridsys>
+<planci>
+<plance>coordinate pair</plance>
+<coordrep>
+<absres>0.000000</absres>
+<ordres>0.000000</ordres>
+</coordrep>
+<plandu>survey feet</plandu>
+</planci>
+</planar>
+<geodetic>
+<horizdn>North American Datum of 1983</horizdn>
+<ellips>Geodetic Reference System 80</ellips>
+<semiaxis>6378137.000000</semiaxis>
+<denflat>298.257222</denflat>
+</geodetic>
+</horizsys>
+<vertdef>
+<altsys>
+<altres>0.001000</altres>
+<altenc>Explicit elevation coordinate included with horizontal coordinates</altenc>
+</altsys>
+</vertdef>
+</spref>
+<eainfo>
+<detailed>
+<enttyp Sync="TRUE">
+<enttypl>43.pat</enttypl>
+<enttypd>polygons identify watershed boundaries</enttypd>
+<enttypds Name="RIDEM_watersheds">n/a</enttypds>
+</enttyp>
+<attr Sync="TRUE">
+<attrlabl>FID</attrlabl>
+<attrdef Sync="TRUE">Internal feature number.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+<udom>Sequential unique whole numbers that are automatically generated.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>Shape</attrlabl>
+<attrdef>Feature geometry.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+<udom Sync="TRUE">Coordinates defining the features.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>AREA</attrlabl>
+<attrdef Sync="TRUE">Area of feature in internal units squared.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv Sync="TRUE">
+<udom>Positive real numbers that are automatically generated.</udom>
+</attrdomv>
+</attr>
+<attr Sync="TRUE">
+<attrlabl>PERIMETER</attrlabl>
+<attrdef Sync="TRUE">Perimeter of feature in internal units.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+<udom Name="RIDEM_watersheds">Positive real numbers that are automatically generated.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl Sync="TRUE">43 #</attrlabl>
+<attrdef>Internal feature number.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+<udom>Sequential unique whole numbers that are automatically generated.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>43-ID</attrlabl>
+<attrdef Sync="TRUE">User-defined feature number.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv Sync="TRUE">
+<udom>Sequential unique whole numbers that are automatically generated.</udom>
+</attrdomv>
+</attr>
+<attr Sync="TRUE">
+<attrlabl>HUC_8</attrlabl>
+<attrdef>A unique 8-digit code from the USGS map series "Hydrologic Unit Maps". The same number was used in every record that pertains to a subwatershed that resides within the same 8-digit sub-basin.</attrdef>
+<attrdefs Sync="TRUE">Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd>
+<codesetn>Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>HUC_10</attrlabl>
+<attrdef>This field provides a unique 10-digit code for each watershed derived from the 8-digit code.  This same number was used in every record that pertains to a subwatershed that resides within the same 10-digit watershed.</attrdef>
+<attrdefs>Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd>
+<codesetn>Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr Sync="TRUE">
+<attrlabl>HUC_12</attrlabl>
+<attrdef>This field provides a unique 12-digit code for each subwatershed derived from the 10-digit code.</attrdef>
+<attrdefs Sync="TRUE">Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd>
+<codesetn Sync="TRUE">Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl Sync="TRUE">ACRES</attrlabl>
+<attrdef>Area of subwatershed including non-contributing areas calculated to acres as a whole number, no decimals.</attrdef>
+<attrdefs>Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd>
+<codesetn>Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr Sync="TRUE">
+<attrlabl>STATES</attrlabl>
+<attrdef>The "States" field includes the names of all state(s) that the subwatershed falls within.</attrdef>
+<attrdefs>Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd>
+<codesetn Sync="TRUE">Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>NCONTRB_A</attrlabl>
+<attrdef>Drainage areas that do not flow toward the outlet of any hydrologic unit are considered non-contributing.</attrdef>
+<attrdefs>Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd>
+<codesetn>Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl Sync="TRUE">HU_10_DS</attrlabl>
+<attrdef>The 10-digit code of the 5th level hydrologic unit that is receiving the majority of the flow from the watershed that the 6th level HU falls within.  Outlets created by ditching or other artificial drainage were not considered for this field.</attrdef>
+<attrdefs>Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd>
+<codesetn>Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>HU_10_NAME</attrlabl>
+<attrdef>A unique name for each 5th level hydrologic unit that relates to the major water feature within the polygon or the major water body it contributes to</attrdef>
+<attrdefs>Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv Sync="TRUE">
+<codesetd>
+<codesetn>Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr Sync="TRUE">
+<attrlabl>HU_10_MOD</attrlabl>
+<attrdef>This field identifies interbasin transfers (IT), dams at outlet (DM), etc. that modify natural overland flow as modifications are identified from most significant to least significant modification(s).  Hydrologic units with no modification are marked with NM.</attrdef>
+<attrdefs>Modification by  1 to the Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd>
+<codesetn Sync="TRUE">Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>HU_10_TYPE</attrlabl>
+<attrdef>This field identifies the type of watershed.</attrdef>
+<attrdefs>Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd Sync="TRUE">
+<codesetn>Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>HU_12_DS</attrlabl>
+<attrdef Sync="TRUE">The 12-digit code of the 5th level hydrologic unit that is receiving the majority of the flow from the watershed that the 6th level HU falls within.  Outlets created by ditching or other artificial drainage were not considered for this field.</attrdef>
+<attrdefs>Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd>
+<codesetn>Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets Sync="TRUE">Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>HU_12_NAME</attrlabl>
+<attrdef>A unique name for each 6th level hydrologic unit that relates to the major water feature within the polygon or the major water body it contributes to</attrdef>
+<attrdefs>Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd>
+<codesetn>Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>HU_12_MOD</attrlabl>
+<attrdef>This field identifies interbasin transfers (IT), dams at outlet (DM), etc. that modify natural overland flow as  Modifications are identified from most significant to least significant modification(s).  Hydrologic units with no modification are marked with NM.</attrdef>
+<attrdefs>Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd>
+<codesetn>Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>HU_12_TYPE</attrlabl>
+<attrdef>This field identifies the type of watershed.</attrdef>
+<attrdefs>Federal Standards for Delineation of Hydrologic Unit Boundaries</attrdefs>
+<attrdomv>
+<codesetd>
+<codesetn>Federal Standards for the Delineation of Hydrologic Unit Boundaries</codesetn>
+<codesets>Please refer to the Entity and Attribute Overview for valid values</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>LOCAL_NAME</attrlabl>
+<attrdef>Local watershed names</attrdef>
+<attrdefs>Rhode Island Department of Environmental Management</attrdefs>
+<attrdomv>
+<udom>free text</udom>
+</attrdomv>
+</attr>
+</detailed>
+<overview>
+<eaover>
+This is a description of attributes by field from the Federal Standards for Delineation of Hydrologic Unit Boundaries
+1) Polygon attributes
+Huc_8 : Eight Digit Hydrologic Unit Code
+A unique 8-digit code from the USGS map series "Hydrologic Unit Maps".  The same number was used in every record that pertains to a subwatershed that resides within the same 8-digit sub-basin.Numbers were assigned in an upstream to downstream fashion. Where no downstream/upstream relationship could be determined numbers were assigned in a clockwise fashion.
+Huc_10:	Ten Digit Hydrologic Unit Code
+This field provides a unique 10-digit code for each watershed.  This same number was used in every record that pertains to a subwatershed that resides within the same 10-digit watershed. Numbers were assigned in an upstream to downstream fashion. Where no downstream/upstream relationship could be determined numbers were assigned in a clockwise fashion.
+Huc_12:	Twelve Digit Hydrologic Unit Code
+This field provides a unique 12-digit code for each subwatershed.  Numbers were assigned in an upstream to downstream fashion. Where no downstream/upstream relationship could be determined numbers were assigned in a clockwise fashion.
+Acres: 	Acres
+Area of subwatershed including non-contributing areas calculated to acres as a whole number, no decimals.  The "Acres" field was calculated from the "Area" field.
+States: 	States
+The "States" field includes the names of all state(s) that the subwatershed falls within.  The 2-digit postal abbreviation in upper case and in alphabetical order was used, separated with a comma.
+Ncontrb_a: Non-Contributing Area
+Drainage areas that do not flow toward the outlet of any hydrologic unit are considered non-contributing.  If a non-contributing area is on the boundary between two or more hydrologic units, the non-contributing area is associated with the hydrologic unit adjacent to the low point on the boundary. This attribute should be the total of the non-contributing areas within a hydrologic unit calculated in acres.
+Hu_10_ds: Fifth Level Downstream Hydrologic Unit Code
+This field has the 10-digit code of the 5th level hydrologic unit that is receiving the majority of the flow from the watershed that the 6th level HU falls within.  Outlets created by ditching or other artificial drainage were not considered for this field. If an HU flows into an ocean or the Gulf of Mexico, this field was populated with "OCEAN" and if a HU flows into one of the Great Lakes the term "LAKE" was used.  If a HU flows across international borders, "CANADA" or "MEXICO" was used depending on which country the HU drains into.  If an HU is  a closed basin, then the term "CLOSED BASIN"was used.
+Hu_10_name: Fifth Level Hydrologic Unit Name
+This field used officially recognized names only.  This field was populated by following the directions in subsection 6.3 "Watershed and Subwatershed Naming Protocol".  The name used to attribute the watershed was used only once within a 4th level unit.
+Hu_10_mod: Fifth Level Hydrologic Unit Modifications
+This field identifies any type of modifications to natural overland flow that alters the location of the hydrologic unit boundary for a 10-digit watershed.  This field shows the most significant to least significant modification(s) to the watershed boundary.  One or more of the following abbreviations was used.
+SC - Stormwater Canal
+ID - Irrigation Ditch
+IT - Interbasin Transfer
+BC - Barge Canal
+SD - Stormwater Ditch
+PD - Pipe Diversion
+CD - Channel Diversion
+NC - Non-Contributing
+KA - Karst
+LE - Levee
+NM - No Modifications
+OC - Overflow Channel
+DM - Dam at outlet or HU boundary
+OT - Other
+Hu_10_type:    Fifth Level Hydrologic Unit Type
+This field was populated with the hydrologic unit type from the list provided that most closely identifies the watershed.
+S - "Standard" hydrologic unit - Any land HU with drainage flowing to a single outlet point, excluding non-contributing areas. This includes areas or small triangular wedges between adjacent HU's that remain after classic hydrologic units are delineated.  Some examples include "true", "classic", "composite", and "remnant" hydrologic units.
+C - "Closed Basin" hydrologic unit - A drainage area that is 100% non-contributing. This means all surface flow is internal, no overland flow leaves the hydrologic unit through the outlet point.
+F - "Frontal" hydrologic unit - Areas along the coastline of lakes, oceans, bays, etc. that have more than one outlet.  These HU's are predominantly land with some water areas at or near the outlet(s).
+W - "Water" hydrologic unit - Hydrologic units that are predominantly water with adjacent land areas, ex. lake, easturies, harbors.
+I - "Island" hydrologic unit - A hydrologic unit that is one or more islands and adjacent water out to the toe of the shore face.
+U - "Unclassified" hydrologic unit - A hydrologic unit that can't be defined or doesn't fit into one of the types that have been listed.
+Hu_12_ds:   Sixth Level Downstream Hydrologic Unit Code
+This field was populated with the 12-digit code of the 6th level hydrologic unit that is receiving the majority of the flow from the subwatershed.  Outlets created by ditching or other artificial drainage were not considered for this field.  If a HU flows into an ocean or the Gulf of Mexico it was populate with "OCEAN" and if a HU flows into one of the Great Lakes the term "LAKE" was used.  If a HU flows across international borders, "CANADA" or "MEXICO" was used depending on which country the HU drains into.  If an HU is a closed basin, this field was populated with the term "CLOSED BASIN".
+Hu_12_name:   Sixth Level Hydrologic Unit Name
+Officially recognized names were used in this field.  This field was populated by following the directions in subsection 6.3 "Watershed and Subwatershed Naming Protocol".  The name used to attribute the subwatershed was used only once within a 4th level unit.
+Hu_12_mod:  Sixth Level Hydrologic Unit Modifications
+This field identifies any type of man-made modification(s) to natural overland flow that alters the location of the hydrologic unit boundary for a 12-digit subwatershed.  One or more of the following abbreviations was chosen for this field.
+SC - Stormwater Canal
+ID - Irrigation Ditch
+IT - Interbasin Transfer
+BC - Barge Canal
+SD - Stormwater Ditch
+PD - Pipe Diversion
+CD - Channel Diversion
+NC - Non-Contributing
+KA - Karst
+LE - Levee
+NM - No Modifications
+OC - Overflow Channel
+DM - Dam at outlet or HU boundary
+OT - Other
+Hu_12_type:    Sixth Level Hydrologic Unit Type
+This field was populated with the hydrologic unit type from the list provided that most closely identifies the subwatershed.
+S - "Standard" hydrologic unit - Any land HU with drainage flowing to a single outlet point, excluding non-contributing areas. This includes areas or small triangular wedges between adjacent HU's that remain after classic hydrologic units are delineated.  Some examples include "true", "classic", "composite", and "remnant" hydrologic units.
+C - "Closed Basin" hydrologic unit - A drainage area that is 100% non-contributing.  This means all surface flow is internal, no overland flow leaves the hydrologic unit through the outlet point.
+F - "Frontal" hydrologic unit - Areas along the coastline of lakes, oceans, bays, etc. that have more than one outlet.  These HU's are predominantly land with some water at or near the outlet(s).
+W - "Water" hydrologic unit - Hydrologic units that are predominantly water with adjacent land areas, ex. lake, easturies.
+I - "Island" hydrologic unit - A hydrologic unit that is one or more islands and adjacent water out to the toe of the shore face.
+U - "Unclassified" hydrologic unit - A hydrologic unit that can't be defined or doesn't fit into one of the types that have been listed.
+2) Line attributes
+Hu_level:	Hydrologic Unit Level
+This field provides the means to create cartographically pleasing maps.  This field is populated with the highest hydrologic unit level (smallest number) for the line (arc) represented by the record.  The attribute was recorded using numbers 1 through 6 representing each level with 1 being the highest and 6 the lowest level.  An example would be if a line represents a region, subregion, basin, subbasin, watershed, and subwatershed boundary, then this cell was populated with a 1 (Region).  Below is a list of numbers used for each level.
+Level    Digit#       Name
+1          2          Region
+2          4          Subregion
+3          6          Basin
+4          8          Subbasin
+5          10         Watershed
+6          12        Subwatershed
+Linesource:	Line Spatial Data Source
+The Linesource indicates the base map source(s) used to delineate at 1:24,000 scale.  The field was populated using one of the standardized code(s) listed below.  If more than one code was used, then a comma was used to separate the codes.
+TOPO24 - Delineation from hardcopy 1:24,000 scale topographic maps
+TOPO25 - Delineation from hardcopy 1:25,000 topgraphic maps, only Alaska          and Caribbean
+TOPO63 - Delineation from hardcopy 1:63,360 topographic maps, only Alaska and Caribbean
+DRG24 - Delineation from 1:24,000 scale Digital Raster Graphics
+DRG25 - Delineation from 1:25,000 Digital Raster Graphics, only Alaska and Caribbean
+DRG63 - Delineation from 1:63,360 Digital Raster Graphics, only Alaska and Caribbean
+DEM10 - Derived from 10 meter Digital Elevation Model
+DEM30 - Derived from 30 meter Digital Elevation Model
+NED30 - Derived from 30 meter National Elevation Dateset Model
+EDNA30 - (formally NED-H), derived from 30 meter Elevation Derivatives for National
+Applications
+BATH"scale" (ex. BATH24) - Interpreted from NOAA 1:24,000 scale bathymetric data
+HYPSO"scale" (ex. HYPSO24)- Delineated from 1:24,000 scale contour data
+ORTHO"scale" (ex. ORTHO12) - Interpreted from 1:12,000 scale Ortho-imagery
+DEDEM10 - Drainage enforced 10 meter Digital Elevation Model
+DEDEM30 - Drainage enforced 30 meter Digital Elevation Model
+GPS - Derived from Global Positioning System
+LIDAR - Derived from LIDAR
+IFSAR - Derived from IFSAR data
+OTH - Other
+UNK - Unknown
+All other reference and source maps not listed should be noted in the metadata.
+Meta_id:	Metadata ID Number
+The Metadata ID is a code that identifies which metadata file applies to the arc. In most cases there is only one metadata file. However, in some cases more than one metadata file was used to identify different groups and/or procedures used to produce the lines. The metadata ID is a 4-character code starting with the 2-letter state postal code, followed by a 2-digit sequence number. For example "OK01", "ID02", etc
+</eaover>
+<eadetcit>Federal Standard for Delineation of Hydrologic Unit Boundaries (ftp://ftp-fc.sc.egov.usda.gov/NCGC/products/watershed/hu-standards.pdf)</eadetcit>
+</overview>
+</eainfo>
+<distinfo>
+<distrib>
+<cntinfo>
+<cntorgp>
+<cntorg>University of Rhode Island Environmental Data Center</cntorg>
+<cntper>Erica Tefft</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>1 Greenhouse Road</address>
+<city>Kingston</city>
+<state>RI</state>
+<postal>02881</postal>
+</cntaddr>
+<cntvoice>401-874-5054</cntvoice>
+<cntemail>erica@edc.uri.edu</cntemail>
+<cntinst>email preferred</cntinst>
+</cntinfo>
+</distrib>
+<distliab>This dataset is provided 'as is.'  The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.</distliab>
+<stdorder>
+<digform>
+<digtinfo>
+<formname>Esri shapefile</formname>
+<filedec>ZIP</filedec>
+</digtinfo>
+<digtopt>
+<onlinopt>
+<computer>
+<networka>
+<networkr>http://www.rigis.org</networkr>
+</networka>
+</computer>
+</onlinopt>
+</digtopt>
+</digform>
+<fees>No fee for downloading directly from the RIGIS Data Distribution System located at http://www.rigis.org.</fees>
+</stdorder>
+</distinfo>
+<metainfo>
+<metd>20080130</metd>
+<metrd>20090206</metrd>
+<metc>
+<cntinfo>
+<cntorgp>
+<cntorg>Rhode Island Department of Environmental Management</cntorg>
+<cntper>Paul Jordan</cntper>
+</cntorgp>
+<cntpos>Supervising GIS Specialist</cntpos>
+<cntaddr>
+<addrtype>mailing and physical address</addrtype>
+<address>RIDEM / Office of Planning &amp; Development</address>
+<address>235 Promenade Street</address>
+<city>Providence</city>
+<state>Rhode Island</state>
+<postal>02908</postal>
+<country>USA</country>
+</cntaddr>
+<cntvoice>(401) 222-2776</cntvoice>
+<cntfax>(401) 222-2069</cntfax>
+<cntemail>paul.jordan@dem.ri.gov</cntemail>
+<hours>8:00am to 4:00pm M-F (EST)</hours>
+</cntinfo>
+</metc>
+<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001-1998</metstdv>
+<mettc>local time</mettc>
+<metac>none</metac>
+<metuc>none</metuc>
+<metextns>
+<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+<metprof>ESRI Metadata Profile</metprof>
+</metextns>
+</metainfo>
+</metadata>

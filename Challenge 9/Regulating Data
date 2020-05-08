@@ -1,0 +1,170 @@
+import os
+import arcpy
+arcpy.env.workspace = mainDirectory = raw_input(r"Enter your file path here: ")
+from math import radians, sin, cos
+arcpy.env.overwriteOutput = True
+
+outputDirectory = os.path.join(mainDirectory, "outputs")
+if not os.path.exists(outputDirectory):
+    os.mkdir(outputDirectory)
+
+outputTemp = os.path.join(mainDirectory, "temporary")
+if not os.path.exists(outputTemp):
+    os.mkdir(outputTemp)
+
+arcpy.AddMessage(r'Directory Setup Steps are now complete') # different way to format a message
+arcpy.AddMessage(" ")
+
+input = os.path.join(mainDirectory, 'Site_Locations.shp')
+locations_list = []
+
+with arcpy.da.SearchCursor(input, ['SHAPE@XY', 'Site_Code']) as cursor:
+    for row in cursor:
+        locations_list.append(row)
+
+print locations_list.append
+print "input locations completed"
+
+referenceName = arcpy.Describe(input).spatialReference.name
+referenceNumber = arcpy.Describe(input).spatialReference.factoryCode
+print "The name of the coordinate system is " + referenceName + "."
+print "The spatial reference number is " + str(referenceNumber) + "."
+
+radLinesList = []
+radLinesClipped = []
+siteCodeList = []
+bufferedSites = []
+finalStatsList = []
+
+
+for a in locations_list:
+    out_path = outputDirectory
+    out_name = "radLines_" + a[1] + ".shp"  # Naming file after Site_Code field
+    geometry_type = "POLYLINE"
+    template = "#"
+    has_m = "DISABLED"
+    has_z = "DISABLED"
+    spatial_ref = referenceNumber
+
+    arcpy.CreateFeatureclass_management(out_path, out_name, geometry_type, template, has_m, has_z, spatial_ref)
+
+    origin_x, origin_y = a[0][0], a[0][1]
+    distance = 1000000
+    angle = 10  # in degrees
+
+    OutputFeature = os.path.join(out_path, out_name)
+
+
+    angles = range(0, 360, angle) # create list of bearings
+
+    for ang in angles:
+        angle = float(int(ang))
+        (disp_x, disp_y) = (distance * sin(radians(angle)), distance * cos(radians(angle)))
+        (end_x, end_y) = (origin_x + disp_x, origin_y + disp_y)
+        (end2_x, end2_y) = (origin_x + disp_x, origin_y + disp_y)
+
+        cur = arcpy.InsertCursor(OutputFeature)
+        lineArray = arcpy.Array()
+
+        start = arcpy.Point()
+        (start.ID, start.X, start.Y) = (1, origin_x, origin_y)
+        lineArray.add(start)
+
+        end = arcpy.Point()
+        (end.ID, end.X, end.Y) = (2, end_x, end_y)
+        lineArray.add(end)
+
+        feat = cur.newRow()
+        feat.shape = lineArray
+        cur.insertRow(feat)
+
+        lineArray.removeAll()
+        del cur
+
+    radLinesList.append(out_name)
+    print "Radiating Lines" + str(a[1]) + " created successfully!"
+
+
+for b in radLinesList:
+    arcpy.env.workspace = outputDirectory
+    in_features = b
+    clip = os.path.join(mainDirectory, "NB_Coastline.shp") #Add Coded Location of input coastline correctly
+    out_feature = "radLines_clip_" + b[9:11] + ".shp"
+    xy_tolerance = ""
+
+    arcpy.Clip_analysis(in_features, clip, out_feature, xy_tolerance)
+
+    radLinesClipped.append(out_feature)
+    print "Clipping " + b[9:11] + " created successfully!"
+
+
+for c in radLinesClipped:
+    m_input = c
+    m_output = "fetchLines_" + c[14:16] + ".shp"
+
+    arcpy.MultipartToSinglepart_management(m_input, m_output)
+    print "Fetch lines " + c[14:16] + " created successfully!"
+
+with arcpy.da.SearchCursor(input, ['Site_Code']) as cursor:
+    for row in cursor:
+        siteCodeList.append(row[0].encode("utf-8"))
+
+for x in siteCodeList:
+    sites = arcpy.MakeFeatureLayer_management(os.path.join(mainDirectory, "Site_Locations.shp")) #Add fixed
+    whereCategory = "Site_Code"
+    whereResponse = x
+    whereClause = "{} = '{}'".format(arcpy.AddFieldDelimiters(sites, whereCategory), whereResponse)
+    print whereClause
+    arcpy.SelectLayerByAttribute_management(sites, "NEW_SELECTION", whereClause)
+
+    in_class = sites
+    out_class = "Buffer_" + x + ".shp"
+    buffer_distance = "10 Meters"
+    line_side = "FULL"
+    line_end_type = "ROUND"
+    dissolve_option = "NONE"
+    dissolve_field = ""
+    method = "PLANAR"
+
+    arcpy.Buffer_analysis(in_class, out_class, buffer_distance, line_side, line_end_type,
+                      dissolve_option, dissolve_field, method)
+
+
+    m_output = "fetchLines_" + x + ".shp"
+
+    arcpy.MakeFeatureLayer_management(m_output,"m_output_1")
+    arcpy.MakeFeatureLayer_management("Buffer_" + x + ".shp", "buffer_1")
+
+    arcpy.SelectLayerByLocation_management("m_output_1", "INTERSECT", "buffer_1", "", "NEW_SELECTION", "NOT_INVERT")
+    arcpy.CopyFeatures_management("m_output_1", "fetchLines_" + x + "_36Lines.shp")
+
+
+    in_geo = "fetchLines_" + x + "_36Lines.shp"     # Add geometry attribute to calculate length of fetch lines
+    properties = "LENGTH"
+    length_unit = ""
+    area_unit = ""
+    coordinate_system = ""
+
+    arcpy.AddGeometryAttributes_management(in_geo, properties, length_unit, area_unit, coordinate_system)
+    print "Shapefile containing all 36 lines for " + x + " created successfully!"
+
+    in_table = in_geo
+    out_table = "stats_table" + x + ".dbf"
+    stat_fields = [['LENGTH', 'SUM'], ['LENGTH', 'STD']]
+
+    arcpy.Statistics_analysis(in_table, out_table, stat_fields)
+    finalStatsList.append(out_table)
+
+print len(finalStatsList)
+print "Producing summary statistics"
+
+arcpy.Merge_management(finalStatsList, "outputStats.dbf")
+
+for i in finalStatsList:
+    print i
+    with arcpy.da.SearchCursor(i, ['FREQUENCY','SUM_LENGTH','STD_LENGTH']) as cursor:
+        for row in cursor:
+            print row
+
+
+print "this is done... NEVER again please..."
